@@ -1,0 +1,63 @@
+/* Works ====================== */
+.works {
+  padding: 0 10px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.works .work {
+  position: relative;
+  background-color: coral;
+}
+
+.works .full {
+  grid-column: span 2;
+  height: 100vh;
+  background-image: url(../assets/predio.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.works .work.full h2 {
+  position: unset;
+}
+
+.works .work img {
+  display: block;
+  max-width: 100%;
+}
+
+.works .work h2 {
+  font-size: 180px;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  line-height: 180px;
+  left: 2%;
+}
+
+@media screen and (max-width: 1000px){
+  .works {
+    padding: 0;
+  }
+  .works .work {
+    grid-column: span 2;
+    margin: 0 10px;
+  }
+  .works .work.full {
+    margin: 0;
+  }
+  .works .work h2 {
+    font-size: 100px;
+    line-height: 100px;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .works .work h2 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}

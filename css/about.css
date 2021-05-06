@@ -1,0 +1,42 @@
+.about .container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 6fr 1fr 1fr;
+}
+
+.about .container p {
+  max-width: 460px;
+  line-height: 1.2;
+}
+
+.about .container .appear {
+  margin-right: 60px;
+}
+
+.about .container ul li {
+  margin: 0 0 20px;
+}
+
+.about .container time {
+  color: var(--highlight);
+}
+
+.about h2 {
+  color: var(--highlight);
+  margin: 0 0 70px;
+}
+
+@media screen and (max-width: 1000px){
+  .about .container p {
+    grid-column: span 8;
+  }
+  .about .container ul {
+    margin: 70px 0 0;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .about .container ul {
+    grid-column: span 8;
+  }
+}
