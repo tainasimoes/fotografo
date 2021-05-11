@@ -1,0 +1,29 @@
+/* Base ========= */
+.wrap {
+  padding: 148px 112px;
+}
+.title {
+  font-size: 12.5vw;
+  font-weight: 200;
+  line-height: .9;
+  margin: 0 0 80px;
+}
+.text {
+  font-size: 20px;
+  display: block;
+}
+.subtitle {
+  font-size: 16px;
+}
+@media screen and (max-width: 1000px){ 
+  .wrap {
+    padding: 40px 20px;
+  }
+  .title {
+    margin: 0 0 20px;
+  }
+  .text {
+    font-size: 16px;
+  }
+}
+/* End Base ========= */

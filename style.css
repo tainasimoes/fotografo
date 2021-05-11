@@ -1,53 +1,34 @@
 @import url(css/variables.css);
 @import url(css/reset.css);
 
+@import url(css/base.css);
+
 @import url(css/header.css);
 @import url(css/works.css);
 @import url(css/about.css);
 
-/* Base ========= */
-.wrap {
-  padding: 148px 112px;
+.contact {
+  background-color: var(--primary);
+  color: var(--secundary);
 }
-.title {
-  font-size: 12.5vw;
-  font-weight: 200;
-  line-height: .9;
-  margin: 0 0 80px;
+
+.contact a {
+  margin: 0 0 10px;
+  width: fit-content;
 }
-.text {
-  font-size: 20px;
-  display: block;
+
+.contact nav {
+  margin-top: 40px;
 }
-.subtitle {
-  font-size: 16px;
+
+.copyright {
+  background-color: var(--primary);
+  color: var(--secundary);
+  padding: 40px 112px 148px;
 }
+
 @media screen and (max-width: 1000px){ 
-  .wrap {
+  .copyright {
     padding: 40px 20px;
   }
-  .title {
-    margin: 0 0 20px;
-  }
-  .text {
-    font-size: 16px;
-  }
-}
-/* End Base ========= */
-
-
-
-
-
-
-/* Deletar */
-.taina {
-  background-color: pink;
-  margin-bottom: 30px;
-  padding: 30px;
-  color: red;
-}
-
-main {
-  background-color: lightblue;
 }

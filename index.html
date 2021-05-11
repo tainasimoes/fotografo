@@ -15,7 +15,8 @@
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
-
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
 
@@ -29,23 +30,20 @@
     <main>
       <section class="works">
 
-        <article class="work">
+        <article class="work" style="background-image: url(assets/predio3.png);">
           <h2>R</h2>
-          <img src="assets/predio.jpg" alt="Predio" />
         </article>
 
-        <article class="work full">
+        <article class="work full" data-aos="fade-up" style="background-image: url(assets/predio.jpg);">
           <h2>A</h2>
         </article>
 
-        <article class="work">
+        <article class="work" style="background-image: url(assets/predio4.png);">
           <h2>P</h2>
-          <img src="assets/predio.jpg" alt="Predio" />
         </article>
 
-        <article class="work">
+        <article class="work" style="background-image: url(assets/predio2.png);">
           <h2>O</h2>
-          <img src="assets/predio.jpg" alt="Predio" />
         </article>
       </section>
 
@@ -115,8 +113,13 @@
       </div>
     </main>
 
-    <footer class="wrap">
-      <div class="copyright">©2020 Todos os direitos reservados</div>
+    <footer class="wrap copyright">
+      <p>©2020 Todos os direitos reservados</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

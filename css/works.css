@@ -7,17 +7,15 @@
 }
 
 .works .work {
+  height: 100vh;
   position: relative;
-  background-color: coral;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .works .full {
   grid-column: span 2;
-  height: 100vh;
-  background-image: url(../assets/predio.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .works .work.full h2 {
@@ -30,11 +28,11 @@
 }
 
 .works .work h2 {
-  font-size: 180px;
+  font-size: 12.5vw;
   font-weight: 700;
   color: #fff;
   position: absolute;
-  line-height: 180px;
+  line-height: 12.5vw;
   left: 2%;
 }
 
@@ -49,10 +47,10 @@
   .works .work.full {
     margin: 0;
   }
-  .works .work h2 {
+  /* .works .work h2 {
     font-size: 100px;
     line-height: 100px;
-  }
+  } */
 }
 
 @media screen and (max-width: 700px){
