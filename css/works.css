@@ -12,20 +12,22 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .works .full {
   grid-column: span 2;
 }
 
-.works .work.full h2 {
-  position: unset;
-}
-
 .works .work img {
   display: block;
   max-width: 100%;
 }
+
+
+
+
+
 
 .works .work h2 {
   font-size: 12.5vw;
@@ -34,7 +36,34 @@
   position: absolute;
   line-height: 12.5vw;
   left: 2%;
+  /* letter-spacing: -1.5vw; */
 }
+
+.works .work h2 span {
+  opacity: 0;
+  transition: opacity .4s ease;
+}
+
+.works .work h2 span:nth-child(2) {
+  transition-delay: .1s;
+}
+
+.works .work.full h2 {
+  position: unset;
+}
+
+.works .work:hover h2 span {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1000px){
   .works {

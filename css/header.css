@@ -15,10 +15,41 @@ header h1 {
   font-size: 20px;
 }
 
+
+
+
+/* Padrão */
 header a {
   font-size: 20px;
   color: var(--highlight);
+  border-bottom: 2px solid transparent;
+  position: relative;
+  transition: color .4s ease;
 }
+header a::before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  bottom: -2px;
+  transition: width .4s ease;
+}
+
+/* Transição */
+header a:hover {
+  color: rgba(0, 0, 0, 1);
+}
+header a:hover::before {
+  width: 100%;
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1000px){
   header {
@@ -36,7 +67,6 @@ header a {
     top: calc(16px + 24px); /* 24 e a altura da font */
     order: 2;
     width: 95px;
-    background-color: beige;
   }
   header a:first-child {
     top: 16px;
